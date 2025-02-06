@@ -42,4 +42,5 @@ class ChatService:
 
             return response_data
         except Exception as E:
-            return HTTPException(500, str(E))
+            print(E)
+            raise HTTPException(500, str(E))
